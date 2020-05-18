@@ -62,6 +62,11 @@ ReactDOM.render(
                     frameworkName='Angular.js'
                     title='bla bla bla 3'/>
             <DateTimeNow/>
+            <HelloWorld
+                    id='jquery'
+                    frameworkName='JQuery.js'
+                    title='bla bla bla 4'/>
+            <DateTimeNow/>
         </div>,
         document.getElementById('root')
 )
