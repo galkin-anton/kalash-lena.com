@@ -69,9 +69,9 @@ function uploadFile(filePath, fileName) {
 
     if (fileNameLowerCase.indexOf('.html') >= 0) {
       rc = 'text/html';
-    } else if (fileNameLowerCase.indexOf('.map') >= 0) {
+    } /*else if (fileNameLowerCase.indexOf('.map') >= 0) {
       rc = 'binary/octet-stream';
-    } else if (fileNameLowerCase.indexOf('.css') >= 0) {
+    }*/ else if (fileNameLowerCase.indexOf('.css') >= 0) {
       rc = 'text/css';
     } else if (fileNameLowerCase.indexOf('.json') >= 0) {
       rc = 'application/json';
