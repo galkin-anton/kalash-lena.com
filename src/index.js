@@ -61,10 +61,9 @@ ReactDOM.render(
           id='angular'
           frameworkName='Angular.js'
           title='bla bla bla 3'/>
-      <DateTimeNow/>
       <HelloWorld
           id='jquery'
-          frameworkName='Лена Галкина'
+          frameworkName='Лена Галкина!'
           title='bla bla bla 4'/>
       <DateTimeNow/>
     </div>,
