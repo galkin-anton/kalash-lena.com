@@ -4,21 +4,21 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 class HelloWorld extends React.Component {
-    render() {
-        return (
-                <h1 {...this.props}>
-                    Hello {this.props.frameworkName} World
-                </h1>
-        )
-    }
+  render() {
+    return (
+        <h1 {...this.props}>
+          Hello {this.props.frameworkName} World
+        </h1>
+    );
+  }
 }
 
 class DateTimeNow extends React.Component {
-    render() {
-        return <h1>Date time
-            Now {new Date().toLocaleDateString()} {new Date().toLocaleTimeString()}
-        </h1>
-    }
+  render() {
+    return <h1>Date time
+      Now {new Date().toLocaleDateString()} {new Date().toLocaleTimeString()}
+    </h1>;
+  }
 }
 
 /*
@@ -48,28 +48,28 @@ ReactDOM.render(
 */
 
 ReactDOM.render(
-        <div>
-            <HelloWorld
-                    id='ember'
-                    frameworkName='Ember.js'
-                    title='bla bla bla 1'/>
-            <HelloWorld
-                    id='backbone'
-                    frameworkName='Backbone.js'
-                    title='bla bla bla 2'/>
-            <HelloWorld
-                    id='angular'
-                    frameworkName='Angular.js'
-                    title='bla bla bla 3'/>
-            <DateTimeNow/>
-            <HelloWorld
-                    id='jquery'
-                    frameworkName='JQuery.js'
-                    title='bla bla bla 4'/>
-            <DateTimeNow/>
-        </div>,
-        document.getElementById('root')
-)
+    <div>
+      <HelloWorld
+          id='ember'
+          frameworkName='Ember.js'
+          title='bla bla bla 1'/>
+      <HelloWorld
+          id='backbone'
+          frameworkName='Backbone.js'
+          title='bla bla bla 2'/>
+      <HelloWorld
+          id='angular'
+          frameworkName='Angular.js'
+          title='bla bla bla 3'/>
+      <DateTimeNow/>
+      <HelloWorld
+          id='jquery'
+          frameworkName='JQuery.js'
+          title='bla bla bla 4'/>
+      <DateTimeNow/>
+    </div>,
+    document.getElementById('root'),
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
