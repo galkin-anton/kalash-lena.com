@@ -60,7 +60,7 @@ function uploadFile(filePath, fileName) {
     if (err) {
       return console.log('Error uploading file ', err);
     }
-    console.log(`Successfully uploaded '${fileKey}'!`, {res});
+    console.log(`Successfully uploaded '${fileKey} ${metaData}'!`, {res});
   });
 
   function getContentTypeByFile(fName) {
@@ -79,7 +79,7 @@ function uploadFile(filePath, fileName) {
       rc = 'application/x-javascript';
     } else if (fileNameLowerCase.indexOf('.png') >= 0) {
       rc = 'image/png';
-    } else if (fileNameLowerCase.indexOf('.icon') >= 0) {
+    } else if (fileNameLowerCase.indexOf('.ico') >= 0) {
       rc = 'image/x-icon';
     } else if (fileNameLowerCase.indexOf('.jpg') >= 0) rc = 'image/jpg';
 
