@@ -69,6 +69,8 @@ function uploadFile(filePath, fileName) {
 
     if (fileNameLowerCase.indexOf('.html') >= 0) {
       rc = 'text/html';
+    } else if (fileNameLowerCase.indexOf('.map') >= 0) {
+      rc = 'binary/octet-stream';
     } else if (fileNameLowerCase.indexOf('.css') >= 0) {
       rc = 'text/css';
     } else if (fileNameLowerCase.indexOf('.json') >= 0) {
@@ -77,8 +79,8 @@ function uploadFile(filePath, fileName) {
       rc = 'application/x-javascript';
     } else if (fileNameLowerCase.indexOf('.png') >= 0) {
       rc = 'image/png';
-    } else if (fileNameLowerCase.indexOf('.map') >= 0) {
-      rc = 'text/plain';
+    } else if (fileNameLowerCase.indexOf('.icon') >= 0) {
+      rc = 'image/x-icon';
     } else if (fileNameLowerCase.indexOf('.jpg') >= 0) rc = 'image/jpg';
 
     return rc;
