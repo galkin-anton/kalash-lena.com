@@ -77,6 +77,8 @@ function uploadFile(filePath, fileName) {
       rc = 'application/x-javascript';
     } else if (fileNameLowerCase.indexOf('.png') >= 0) {
       rc = 'image/png';
+    } else if (fileNameLowerCase.indexOf('.map') >= 0) {
+      rc = 'text/plain';
     } else if (fileNameLowerCase.indexOf('.jpg') >= 0) rc = 'image/jpg';
 
     return rc;
