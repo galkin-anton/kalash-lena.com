@@ -64,7 +64,7 @@ ReactDOM.render(
       <DateTimeNow/>
       <HelloWorld
           id='jquery'
-          frameworkName='JQuery.js'
+          frameworkName='Лена Галкина'
           title='bla bla bla 4'/>
       <DateTimeNow/>
     </div>,
