@@ -21,32 +21,6 @@ class DateTimeNow extends React.Component {
   }
 }
 
-/*
-ReactDOM.render(
-        React.createElement('div',
-                null,
-                React.createElement(HelloWorld, {
-                    id: "ember",
-                    frameworkname: "Ember.js",
-                    title: "bla bla bla 1"
-                }),
-                React.createElement(HelloWorld, {
-                    id: "backbone",
-                    frameworkname: "Backbone.js",
-                    title: "bla bla bla 2"
-                }),
-                React.createElement('a', {href: 'http://node.university'},
-                        'some'),
-                React.createElement(HelloWorld, {
-                    id: "angular",
-                    frameworkname: "Angular.js",
-                    title: "bla bla bla 3"
-                })
-        ),
-        document.getElementById('root')
-);
-*/
-
 ReactDOM.render(
     <div>
       <HelloWorld
@@ -66,6 +40,7 @@ ReactDOM.render(
           frameworkName='Лена Галкина!!'
           title='bla bla bla 4'/>
       <DateTimeNow/>
+      <button>ok</button>
     </div>,
     document.getElementById('root'),
 );
