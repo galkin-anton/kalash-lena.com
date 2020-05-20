@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './button.scss';
 import * as serviceWorker from './serviceWorker';
 
 class HelloWorld extends React.Component {
