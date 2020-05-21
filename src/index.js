@@ -3,6 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
+class Clock extends React.Component {
+  state = {
+    currentTime: (new Date()).toLocaleString(),
+  };
+
+  constructor(props) {
+    super(props);
+    this.launchClock();
+  }
+
+  launchClock() {
+    setInterval(() => {
+      console.log('Udatimg time...');
+      this.setState({
+        currentTime: (new Date()).toLocaleString(),
+      });
+    }, 1000);
+  }
+
+  render() {
+    console.log('Rendering Clock...');
+    return <div>{this.state.currentTime}</div>;
+  }
+}
+
 class HelloWorld extends React.Component {
   render() {
     return (
@@ -13,10 +38,10 @@ class HelloWorld extends React.Component {
   }
 }
 
-class DateTimeNow extends React.Component {
+class DateNow extends React.Component {
   render() {
     return <h1>Date time
-      Now {new Date().toLocaleDateString()} {new Date().toLocaleTimeString()}
+      Now {new Date().toLocaleDateString()}
     </h1>;
   }
 }
@@ -39,7 +64,8 @@ ReactDOM.render(
           id='jquery'
           frameworkName='Лена Галкина!!'
           title='bla bla bla 4'/>
-      <DateTimeNow/>
+      <DateNow/>
+      <Clock/>
       <button>ok</button>
     </div>,
     document.getElementById('root'),
