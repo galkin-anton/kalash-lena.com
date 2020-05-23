@@ -1,32 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
+import Clock from './components/clock'
 import * as serviceWorker from './serviceWorker';
-
-class Clock extends React.Component {
-  state = {
-    currentTime: (new Date()).toLocaleString(),
-  };
-
-  constructor(props) {
-    super(props);
-    this.launchClock();
-  }
-
-  launchClock() {
-    setInterval(() => {
-      console.log('Udatimg time...');
-      this.setState({
-        currentTime: (new Date()).toLocaleString(),
-      });
-    }, 1000);
-  }
-
-  render() {
-    console.log('Rendering Clock...');
-    return <div>{this.state.currentTime}</div>;
-  }
-}
 
 class HelloWorld extends React.Component {
   render() {
