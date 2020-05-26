@@ -1,9 +1,10 @@
 import React from 'react';
 import DigitalDisplay from './digital-display';
+import AnalogDisplay from './analog-display';
 
 class Clock extends React.Component {
   state = {
-    currentTime: (new Date()).toLocaleString(),
+    currentTime: (new Date()),
   };
 
   constructor(props) {
@@ -13,17 +14,18 @@ class Clock extends React.Component {
 
   launchClock() {
     setInterval(() => {
-      console.log('Udatimg time...');
+      //console.log('Udatimg time...');
       this.setState({
-        currentTime: (new Date()).toLocaleString(),
+        currentTime: (new Date()),
       });
     }, 1000);
   }
 
   render() {
-    console.log('Rendering Clock...');
+    //console.log('Rendering Clock...');
     return <div>
-      <DigitalDisplay size={"large"} time={this.state.currentTime}/>
+      <AnalogDisplay time={this.state.currentTime}/>
+      <DigitalDisplay size={"large"} time={this.state.currentTime.toLocaleString()}/>
     </div>;
   }
 }
