@@ -25,7 +25,7 @@ class Clock extends React.Component {
     //console.log('Rendering Clock...');
     return <div>
       <AnalogDisplay time={this.state.currentTime}/>
-      <DigitalDisplay size={"large"} time={this.state.currentTime.toLocaleString()}/>
+      <DigitalDisplay size={"large"} time={this.state.currentTime}/>
     </div>;
   }
 }

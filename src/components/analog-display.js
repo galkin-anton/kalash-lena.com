@@ -2,7 +2,7 @@ import React from 'react';
 
 const AnalogDisplay = function AnalogDisplay(props) {
   let date = props.time;
-  console.log('Updating time...' + date.getSeconds());
+  //console.log('Updating time...' + date.getSeconds());
   let dialStyle = {
     position: 'relative',
     margin: 5,
