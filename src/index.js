@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
+import 'bootstrap'
 import Clock from './components/clock'
+import Users from "./components/Users";
 import * as serviceWorker from './serviceWorker';
+
+require('bootstrap');
 
 class HelloWorld extends React.Component {
   render() {
@@ -43,6 +47,7 @@ ReactDOM.render(
       <DateNow/>
       <Clock/>
       <button>ok</button>
+      <Users data-url={"data/users.json"}/>
     </div>,
     document.getElementById('root'),
 );

@@ -19,7 +19,7 @@ class Clock extends React.Component {
         currentTime: (new Date()),
       });
     }, 1000);
-  }
+}
 
   render() {
     //console.log('Rendering Clock...');

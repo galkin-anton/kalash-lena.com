@@ -1,0 +1,19 @@
+[{
+  "id": 1,
+  "first_name": "Anton",
+  "last_name": "Galkin",
+  "email": "anton@gmail.com",
+  "ip_address": "1.1.1.1"
+},{
+  "id": 2,
+  "first_name": "Elena",
+  "last_name": "Galkina",
+  "email": "elena@gmail.com",
+  "ip_address": "1.1.1.2"
+},{
+  "id": 3,
+  "first_name": "Varvara",
+  "last_name": "Galkina",
+  "email": "varvara@gmail.com",
+  "ip_address": "1.1.1.2"
+}]

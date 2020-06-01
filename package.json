@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "aws-sdk": "^2.678.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -33,6 +31,11 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "aws-sdk": "^2.678.0",
+    "popper.js": "^1.16.1",
     "react-scripts": "^3.4.1",
     "sass": "^1.26.5"
   }
