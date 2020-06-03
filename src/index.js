@@ -1,55 +1,16 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import 'bootstrap'
-import Clock from './components/clock'
-import Users from "./components/Users";
-import SaveButton from "./components/SaveButton";
 import * as serviceWorker from './serviceWorker';
 
 require('bootstrap');
 
-class HelloWorld extends React.Component {
-  render() {
-    return (
-        <h1 {...this.props}>
-          Hello {this.props.frameworkName} World
-        </h1>
-    );
-  }
-}
-
-class DateNow extends React.Component {
-  render() {
-    return <h1>Date time
-      Now {new Date().toLocaleDateString()}
-    </h1>;
-  }
-}
+const App = lazy(() => import('./App'));
+const renderLoader = () => <p>Loading</p>;
 
 ReactDOM.render(
-    <div>
-      <HelloWorld
-          id='ember'
-          frameworkName='Ember.js'
-          title='bla bla bla 1'/>
-      <HelloWorld
-          id='backbone'
-          frameworkName='Backbone.js'
-          title='bla bla bla 2'/>
-      <HelloWorld
-          id='angular'
-          frameworkName='Angular.js'
-          title='bla bla bla 3'/>
-      <HelloWorld
-          id='jquery'
-          frameworkName='Лена Галкина!!'
-          title='bla bla bla 4'/>
-      <DateNow/>
-      <Clock/>
-      <SaveButton/>
-      <Users data-url={"data/users.json"}/>
-    </div>,
+    <Suspense fallback={renderLoader()}>
+      <App/>
+    </Suspense>,
     document.getElementById('root'),
 );
 
