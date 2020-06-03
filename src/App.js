@@ -1,7 +1,6 @@
 import React, {lazy} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './index.scss';
 import 'bootstrap'
 import Users from "./components/Users";
 import SaveButton from "./components/SaveButton";

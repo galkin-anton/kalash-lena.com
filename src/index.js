@@ -1,6 +1,7 @@
 import React, {lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
+import './index.scss';
 
 require('bootstrap');
 
