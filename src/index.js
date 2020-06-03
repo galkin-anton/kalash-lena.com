@@ -4,6 +4,7 @@ import './index.scss';
 import 'bootstrap'
 import Clock from './components/clock'
 import Users from "./components/Users";
+import SaveButton from "./components/SaveButton";
 import * as serviceWorker from './serviceWorker';
 
 require('bootstrap');
@@ -46,7 +47,7 @@ ReactDOM.render(
           title='bla bla bla 4'/>
       <DateNow/>
       <Clock/>
-      <button>ok</button>
+      <SaveButton/>
       <Users data-url={"data/users.json"}/>
     </div>,
     document.getElementById('root'),

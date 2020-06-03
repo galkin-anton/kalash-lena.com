@@ -2,7 +2,7 @@ import React from 'react';
 
 const DigitalDisplay = (props) => {
   let size = props.size;
-  console.log(props.time);
+  //console.log(props.time);
   let styles = {
     fontSize: size === 'large' ? '2em' : '1em'
   };

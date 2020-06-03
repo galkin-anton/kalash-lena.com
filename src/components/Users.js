@@ -4,7 +4,7 @@ class Users extends Component {
   state = {
     users: []
   }
-
+ 
   componentDidMount() {
     //console.log('Users mount')
     fetch(this.props['data-url'])
