@@ -1,5 +1,5 @@
-import React, {lazy} from 'react';
-import logo from './logo.svg';
+import React from 'react';
+//import logo from './logo.svg';
 import './App.css';
 import 'bootstrap'
 import Users from "./components/Users";
