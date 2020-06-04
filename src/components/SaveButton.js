@@ -27,6 +27,7 @@ function SaveButton(props) {
   }
 
   return <button
+      className="btn btn-primary"
       onClick={handleButtonClick}>
     Save count is {count}
   </button>;
